@@ -1,123 +1,86 @@
 %header
-  #logo
-    %a Unicorn Farm
-  %nav.top-bar
-    %ul.title-area
-      / Title Area
-      %li.name
-        %h1
-          %a{:href => "#"} Unicorn Farm
-      / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
-      %li.toggle-topbar.menu-icon
-        %a{:href => "#"}
-          %span Menu
-    %section.top-bar-section
-      / Left Nav Section
-      %ul.left
-        %li.divider
-        %li.active
-          %a{:href => "#"} Home
-        %li.divider
-        %li
-          %a{:href => "#"} About Unicorn Farm
-        %li.divider
-        %li.has-dropdown
-          %a{:href => "#"} Our Philosophy
-          %ul.dropdown
+  .row
+    .small-12.large-5.columns
+      #logo
+        %a Unicorn Farm
+        %div#logo-byline Breeders of Cavalier King Charles Spaniels
+  .row
+    .small-12.large-12.columns
+      %nav.top-bar
+        %ul.title-area
+          / Title Area
+          %li.name
+            %h1
+              %a{:href => "#"} Unicorn Farm
+          / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
+          %li.toggle-topbar.menu-icon
+            %a{:href => "#"}
+              %span Menu
+        %section.top-bar-section
+          / Left Nav Section
+          %ul.left
+            %li
+              %a{:href => "#"} Home
+            %li.divider
             %li.has-dropdown
-              %a{:href => "#"} Dropdown Level 1a
+              %a{:href => "#"} Breed Information
               %ul.dropdown
                 %li
-                  %label Dropdown Level 2 Label
+                  %a{:href => ""} History
                 %li
-                  %a{:href => "#"} Dropdown Level 2a
+                  %a{:href => ""} Photos
                 %li
-                  %a{:href => "#"} Dropdown Level 2b
-                %li.has-dropdown
-                  %a{:href => "#"} Dropdown Level 2c
-                  %ul.dropdown
-                    %li
-                      %label Dropdown Level 3 Label
-                    %li
-                      %a{:href => "#"} Dropdown Level 3a
-                    %li
-                      %a{:href => "#"} Dropdown Level 3b
-                    %li.divider
-                    %li
-                      %a{:href => "#"} Dropdown Level 3c
-                %li
-                  %a{:href => "#"} Dropdown Level 2d
-                %li
-                  %a{:href => "#"} Dropdown Level 2e
-                %li
-                  %a{:href => "#"} Dropdown Level 2f
-            %li
-              %a{:href => "#"} Dropdown Level 1b
-            %li
-              %a{:href => "#"} Dropdown Level 1c
+                  %a{:href => ""} Awards
             %li.divider
-            %li
-              %a{:href => "#"} Dropdown Level 1d
-            %li
-              %a{:href => "#"} Dropdown Level 1e
-            %li
-              %a{:href => "#"} Dropdown Level 1f
-            %li.divider
-            %li
-              %a{:href => "#"} See all &rarr;
-        %li.divider
-      / Right Nav Section
-      %ul
-        %li.divider.hide-for-small
-        %li.has-dropdown
-          %a{:href => "#"} Directions
-          %ul.dropdown
-            %li
-              %label Dropdown Level 1 Label
             %li.has-dropdown
-              %a{:href => "#"} Dropdown Level 1a
+              %a{:href => "#"} Our Philosophy
               %ul.dropdown
-                %li
-                  %a{:href => "#"} Dropdown Level 2a
-                %li
-                  %a{:href => "#"} Dropdown Level 2b
                 %li.has-dropdown
-                  %a{:href => "#"} Dropdown Level 2c
+                  %a{:href => "#"} Diet
                   %ul.dropdown
                     %li
-                      %a{:href => "#"} Dropdown Level 3a
+                      %label Dropdown Level 2 Label
                     %li
-                      %a{:href => "#"} Dropdown Level 3b
+                      %a{:href => "#"} Dropdown Level 2a
                     %li
-                      %a{:href => "#"} Dropdown Level 3c
+                      %a{:href => "#"} Dropdown Level 2b
+                    %li.has-dropdown
+                      %a{:href => "#"} Dropdown Level 2c
+                      %ul.dropdown
+                        %li
+                          %label Dropdown Level 3 Label
+                        %li
+                          %a{:href => "#"} Dropdown Level 3a
+                        %li
+                          %a{:href => "#"} Dropdown Level 3b
+                        %li.divider
+                        %li
+                          %a{:href => "#"} Dropdown Level 3c
+                    %li
+                      %a{:href => "#"} Dropdown Level 2d
+                    %li
+                      %a{:href => "#"} Dropdown Level 2e
+                    %li
+                      %a{:href => "#"} Dropdown Level 2f
                 %li
-                  %a{:href => "#"} Dropdown Level 2d
-                %li
-                  %a{:href => "#"} Dropdown Level 2e
-                %li
-                  %a{:href => "#"} Dropdown Level 2f
+                  %a{:href => "#"} Maintenance
+
+          / Right Nav Section
+          %ul
+            %li.divider
+
             %li
-              %a{:href => "#"} Dropdown Level 1b
-            %li
-              %a{:href => "#"} Dropdown Level 1c
+              %a{:href => "#"} About Us
             %li.divider
             %li
-              %label Dropdown Level 1 Label
-            %li
-              %a{:href => "#"} Dropdown Level 1d
-            %li
-              %a{:href => "#"} Dropdown Level 1e
-            %li
-              %a{:href => "#"} Dropdown Level 1f
+              %a{:href => "#"} Get Directions
             %li.divider
-            %li
-              %a{:href => "#"} See all &rarr;
-        %li.divider
-        %li.has-form.right
-          %form
-            .row.collapse
-              .small-8.columns
-                %input{:type => "text"}/
-              .small-4.columns
-                %a.alert.button{:href => "#"} Search
-        %li.divider.show-for-small
+ 
+            %li.has-form.right
+              %form
+                .row.collapse
+                  .small-8.columns
+                    %input{:type => "text"}/
+                  .small-4.columns
+                    %a.alert.button{:href => "#"} Search
+            %li.divider.show-for-small

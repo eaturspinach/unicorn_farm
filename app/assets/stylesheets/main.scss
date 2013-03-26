@@ -1,4 +1,5 @@
 header {
+	margin-bottom:10px;
 	#logo {
 		a {
 			display:block;
@@ -10,7 +11,12 @@ header {
 			font-size:44px;
 			padding-left:70px;
 			padding-top:12px;
+
 		}
+	}
+	#logo-byline {
+		clear:both;
+		margin-left:72px;
 	}
 	nav {
 		clear:both;
@@ -20,6 +26,11 @@ header {
 	}
 
 }
+
+.top-bar {
+	margin-top:10px;
+}
+
 
 
 /* Smartphones (portrait) Iphone ----------- */
