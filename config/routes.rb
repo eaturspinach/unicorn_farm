@@ -9,6 +9,8 @@ UnicornFarm::Application.routes.draw do
   get '/diet' => 'pages#diet'
   get '/under-construction' => 'pages#under_construction'
 
+  resources :appointments
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

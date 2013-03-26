@@ -1,2 +1,8 @@
-%h1 Appointments#new
-%p Find me in app/views/appointments/new.html.haml
+%h2 Set up an appointment now!
+
+= form_for @appointment do |f|
+  = f.label Date
+  = f.text_field :date
+  = f.label Time
+  = f.text_field :time
+  = f.submit "Setup appointment"
