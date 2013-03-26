@@ -7,6 +7,7 @@
   %body
     .row
       .twelve.columns
-        = render :partial => "layouts/nav"
-        = yield
+        = render :partial => "layouts/header"
+        #main
+          = yield
     = javascript_include_tag "application"
