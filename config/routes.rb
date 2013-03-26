@@ -1,4 +1,8 @@
 UnicornFarm::Application.routes.draw do
+  get "appointments/new"
+
+  get "appointments/create"
+
   get "pages/home"
   get "pages/diet"
 
