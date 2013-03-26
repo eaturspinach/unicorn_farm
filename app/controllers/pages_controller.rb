@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   def diet
   end
+
+  def under_construction
+  end
+  
 end
