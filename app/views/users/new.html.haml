@@ -1,0 +1,10 @@
+= form_for @user do |f|
+  = render 'layouts/error_messages', :object => f.object
+
+  = f.label :first
+  = f.text_field :first
+  = f.label :first
+  = f.text_field :last
+  = f.label :email
+  = f.text_field :email
+  = f.submit "Step 2 - Create an account"

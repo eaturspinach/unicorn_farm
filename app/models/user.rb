@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
 
   has_many :appointments
 
+  validates_presence_of :first, :last, :email
+
 
   def self.create_user( omniauth_token )
       user = User.new

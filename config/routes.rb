@@ -20,6 +20,8 @@ UnicornFarm::Application.routes.draw do
   match '/auth/:provider/callback' => 'authentications#create'
   match '/auth/failure' => 'authentications#failure'
 
+  match "/confirmation" => "appointments#confirmation"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

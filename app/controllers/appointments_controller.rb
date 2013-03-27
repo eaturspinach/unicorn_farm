@@ -8,13 +8,17 @@ class AppointmentsController < ApplicationController
     if @appointment.save
       respond_to do |format|
         format.html{
-          redirect_to new_authentication_path :appointment => @appointment #render to show action/page
-          flash.now[:success] = "Appointment created!"
+          redirect_to new_user_path :appointment => @appointment #render to show action/page
+          # flash.now[:success] = "Appointment created!"
         }
       end
     else
       render :new, :flash => {:error => "Very bad"}
     end
+  end
+
+  def confirmation
+
   end
 
 end
