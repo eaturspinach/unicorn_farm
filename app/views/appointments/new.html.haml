@@ -1,8 +1,13 @@
 %h2 Set up an appointment now!
 
+.row
 = form_for @appointment do |f|
-  = f.label Date
-  = f.text_field :date
-  = f.label Time
-  = f.text_field :time
-  = f.submit "Setup appointment"
+  .small-12.large-6.columns
+    = f.label "Suggest date"
+    = f.text_field :date
+  .small-12.large-6.columns
+    = f.label "Suggest time"
+    = f.select :time, :options_for_select => ["9:00 am", "10:00 am", "11:00 am",
+    "12:00 pm", "1:00 pm", "2:00 pm", " 3:00 pm", "4:00 pm", "5:00 pm"]
+  .small-12.columns
+    = f.submit "Setup appointment", :class => "right"
