@@ -1,4 +1,6 @@
 UnicornFarm::Application.routes.draw do
+  get "users/show"
+
   get "appointments/new"
 
   get "appointments/create"
@@ -10,6 +12,8 @@ UnicornFarm::Application.routes.draw do
   get '/under-construction' => 'pages#under_construction'
 
   resources :appointments
+
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
