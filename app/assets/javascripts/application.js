@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require foundation
 //= require foundation.topbar
+//= require pickadate
 //= require main

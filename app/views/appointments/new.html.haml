@@ -4,7 +4,7 @@
 = form_for @appointment do |f|
   .small-12.large-6.columns
     = f.label "Suggest date"
-    = f.text_field :date
+    = f.text_field :date, :id => "datepicker"
   .small-12.large-6.columns
     = f.label "Suggest time"
     = f.select :time, :options_for_select => ["9:00 am", "10:00 am", "11:00 am",

@@ -5,3 +5,7 @@ $(document).foundation('topbar', {
 	back_text: 'Back', // Define what you want your custom back text to be if custom_back_text: true
 	init : false
 });
+
+// $('#datepicker').pickadate()
+
+$( '[type=date], #datepicker' ).pickadate()
