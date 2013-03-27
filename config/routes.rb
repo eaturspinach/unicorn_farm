@@ -17,6 +17,9 @@ UnicornFarm::Application.routes.draw do
 
   resources :authentications
 
+  match '/auth/:provider/callback' => 'authentications#create'
+  match '/auth/failure' => 'authentications#failure'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
