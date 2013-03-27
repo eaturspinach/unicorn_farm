@@ -8,22 +8,13 @@ class AppointmentsController < ApplicationController
     if @appointment.save
       respond_to do |format|
         format.html{
-          redirect_to authentications_new_path(@appointment) #render to show action/page
+          redirect_to new_authentication_path :appointment => @appointment #render to show action/page
           flash.now[:success] = "Appointment created!"
         }
       end
     else
       render :new, :flash => {:error => "Very bad"}
     end
-  end
-
-  def show
-    # @appointment = Appointment.find params[:id]
-    # if session_is_logged_in
-    #   render @appointment
-    # else
-    #   redirect_to authentications_create_path
-    # end
   end
 
 end
