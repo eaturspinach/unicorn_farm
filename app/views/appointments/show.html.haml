@@ -1,3 +1,1 @@
-in appointments#show
-
-= @appointment
+%h4 #{@appointment.user.first.capitalize} #{@appointment.user.last.capitalize}, you are confirmed for: #{@appointment.date.strftime('%m-%d-%Y')} at #{@appointment.time.strftime('%I:%M %p')}

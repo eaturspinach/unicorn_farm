@@ -12,8 +12,8 @@
     #content
       = form_for @user do |f|
         = render 'layouts/error_messages', :object => f.object
-        = f.fields_for :appointments do |builder|
-          = builder.hidden_field :appointments, :value => @appointment
+        / = f.hidden_field :appointments, :value => @appointment.id
+        %input{:type => "hidden", :name => "appointment", :value => "#{@appointment.id}"}
         .row
           .small-12.large-6.columns
             = f.label "First Name"
