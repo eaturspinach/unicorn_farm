@@ -9,3 +9,7 @@ $(document).foundation('topbar', {
 // $('#datepicker').pickadate()
 
 $( '[type=date], #datepicker' ).pickadate()
+
+$("#new_appointment").validate();
+
+$("#new_user").validate();

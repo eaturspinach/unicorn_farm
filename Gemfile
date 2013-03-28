@@ -9,6 +9,7 @@ gem 'pg'
 gem 'haml-rails'
 gem 'omniauth', :git => 'git://github.com/intridea/omniauth.git'
 gem 'omniauth-facebook'
+gem 'bourbon'
 
 
 # Gems used only for assets and not required

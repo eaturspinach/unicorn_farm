@@ -1,3 +1,11 @@
+@import "addons/button";
+@import "css3/prefixer";
+
+@import "css3/box-shadow";
+@import "css3/linear-gradient";
+@import "functions/linear-gradient";
+
+
 header {
 	margin-bottom:10px;
 	#logo {
@@ -31,17 +39,28 @@ h3 {
 	clear:both;
 }
 
+ul li {
+	list-style-type:none;
+}
+
+label,
+input {
+	font-size:20px ;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+input {font-size:18px !important;}
+
 ul#steps {
 	margin-bottom:40px;
 	display:block;
 }
 
 ul#steps li {
-	list-style-type:none;
 	float:left;
 	margin-right:10px;
 	font-size:18px;
-	// font-weight:bold;
 }
 
 
@@ -51,7 +70,11 @@ ul#steps li {
 
 input[type="submit"] {
 	height:50px;
+	@include button(shiny, green);
+	font-size:20px;
 }
+
+
 
 // #datepicker {
 // 	background:url('calendar.png') 5px 4px no-repeat;

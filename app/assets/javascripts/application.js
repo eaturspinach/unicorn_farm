@@ -15,4 +15,5 @@
 //= require foundation
 //= require foundation.topbar
 //= require pickadate
+//= require jquery.validate
 //= require main
