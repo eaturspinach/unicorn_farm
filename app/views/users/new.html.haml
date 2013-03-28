@@ -1,11 +1,23 @@
-= form_for @user do |f|
-  = render 'layouts/error_messages', :object => f.object
-  = f.fields_for :appointments do |builder|
-    = builder.hidden_field :appointments, :value => @appointment.id 
-  = f.label :first
-  = f.text_field :first
-  = f.label :last
-  = f.text_field :last
-  = f.label :email
-  = f.text_field :email
-  = f.submit "Step 2 - Create an account"
+.row
+  .small-12.large-12.columns
+    %ul#steps
+      %li#first{:style => "opacity:0.5"}
+        Step 1
+      %li#second{:style => "font-weight:bold;"}
+        Step 2
+      %li#third{:style => "opacity:0.5"}
+        Confirmed
+
+    %h3 Step 2 - Create an account
+    #content
+      = form_for @user do |f|
+        = render 'layouts/error_messages', :object => f.object
+        = f.fields_for :appointments do |builder|
+          = builder.hidden_field :appointments, :value => @appointment
+        = f.label "First Name"
+        = f.text_field :first
+        = f.label "Last Name"
+        = f.text_field :last
+        = f.label :email
+        = f.text_field :email
+        = f.submit "Create Account"

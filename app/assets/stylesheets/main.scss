@@ -27,6 +27,24 @@ header {
 
 }
 
+h3 {
+	clear:both;
+}
+
+ul#steps {
+	margin-bottom:40px;
+	display:block;
+}
+
+ul#steps li {
+	list-style-type:none;
+	float:left;
+	margin-right:10px;
+	font-size:18px;
+	// font-weight:bold;
+}
+
+
 .top-bar {
 	margin-top:10px;
 }
@@ -35,11 +53,30 @@ input[type="submit"] {
 	height:50px;
 }
 
+// #datepicker {
+// 	background:url('calendar.png') 5px 4px no-repeat;
+// }
+
+#content {
+	border:1px solid black;
+	float:left;
+	width:100%;
+	padding:20px;
+	border-radius:5px;
+}
 
 #facebook_connect {
 	background: url('facebook_connect.png') center center no-repeat;
 	height:45px;
 	display:block;
+}
+
+#appointment_time {
+	font-size: 20px !important;
+	-webkit-appearance: none;
+	height:32px;
+	padding-left:20px;
+	margin-bottom:20px;
 }
 
 
