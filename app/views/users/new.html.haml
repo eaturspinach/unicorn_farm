@@ -1,9 +1,10 @@
 = form_for @user do |f|
   = render 'layouts/error_messages', :object => f.object
-
+  = f.fields_for :appointments do |builder|
+    = builder.hidden_field :appointments, :value => @appointment.id 
   = f.label :first
   = f.text_field :first
-  = f.label :first
+  = f.label :last
   = f.text_field :last
   = f.label :email
   = f.text_field :email

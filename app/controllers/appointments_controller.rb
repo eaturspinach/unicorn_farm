@@ -9,7 +9,6 @@ class AppointmentsController < ApplicationController
       respond_to do |format|
         format.html{
           redirect_to new_user_path :appointment => @appointment #render to show action/page
-          # flash.now[:success] = "Appointment created!"
         }
       end
     else

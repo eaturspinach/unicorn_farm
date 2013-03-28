@@ -1,19 +1,10 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :first, :last
-
   has_many :appointments
 
+  attr_accessible :email, :first, :last
+
+  accepts_nested_attributes_for :appointments
+
   validates_presence_of :first, :last, :email
-
-
-  def self.create_user( omniauth_token )
-      user = User.new
-      user.authentications.build(:provider => omniauth_token["provider"], :uid => omniauth_token["uid"])
-      user.name = omniauth_token["info"]["name"]
-      user.email = omniauth_token["info"]["email"]
-      user.nickname = omniauth_token["info"]["nickname"]
-      user.save!
-      user
-  end
   
 end

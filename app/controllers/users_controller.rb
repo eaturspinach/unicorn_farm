@@ -3,7 +3,9 @@ class UsersController < ApplicationController
   end
 
   def new
+    @appointment = Appointment.find(params[:appointment])
     @user = User.new
+    @user.appointments.build
   end
 
   def create

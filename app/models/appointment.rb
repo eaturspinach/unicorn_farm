@@ -1,5 +1,5 @@
 class Appointment < ActiveRecord::Base
-  attr_accessible :date, :notes, :time, :user_id
+  attr_accessible :date, :notes, :time, :user_id, :appointment
 
   belongs_to :user
 
