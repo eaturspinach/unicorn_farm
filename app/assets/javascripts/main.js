@@ -6,10 +6,18 @@ $(document).foundation('topbar', {
 	init : false
 });
 
-// $('#datepicker').pickadate()
-
 $( '[type=date], #datepicker' ).pickadate()
 
 $("#new_appointment").validate();
 
-$("#new_user").validate();
+$("#new_user").validate({
+	rules: {
+		email: {
+			required: true,
+			email: true
+		},
+	},
+	messages: {
+		email: "Please enter a valid email address"
+	}
+});
