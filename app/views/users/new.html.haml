@@ -16,13 +16,13 @@
         %input{:type => "hidden", :name => "appointment", :value => "#{@appointment.id}"}
         .row
           .small-12.large-6.columns
-            = f.label "First Name"
+            = f.label "First Name *"
             = f.text_field :first, :class => "required"
           .small-12.large-6.columns
-            = f.label "Last Name"
+            = f.label "Last Name * "
             = f.text_field :last, :class => "required"
           .small-12.large-6.columns.end
-            = f.label :email
+            = f.label "Email *"
             = f.text_field :email, :class => "required", :type => :email
         .row
           .small-12.large-5.columns

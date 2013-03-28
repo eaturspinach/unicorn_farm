@@ -1,1 +1,10 @@
+.row
+  .small-12.large-12.columns
+    %ul#steps
+      %li#first{:style => "opacity:0.5"}
+        Step 1
+      %li#second{:style => "opacity:0.5"}
+        Step 2
+      %li#third{:style => "font-weight:bold;"}
+        Confirmed!
 %h4 #{@appointment.user.first.capitalize} #{@appointment.user.last.capitalize}, you are confirmed for: #{@appointment.date.strftime('%m-%d-%Y')} at #{@appointment.time.strftime('%I:%M %p')}

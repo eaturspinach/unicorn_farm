@@ -9,8 +9,8 @@
       .twelve.columns
         = render :partial => "layouts/header"
         #main
-          - flash.each do |key, value|
-            %h2.flash
-              = value
+          / - flash.each do |key, value|
+          /   %h2.flash
+          /     = value
           = yield
     = javascript_include_tag "application"
